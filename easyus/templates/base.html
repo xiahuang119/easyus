@@ -1,1 +1,26 @@
-<p> hello world </p>
+{% load staticfiles %}
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}easyus{% endblock %}</title>
+  {% block meta %} {% endblock %}
+  <link rel="stylesheet" href="{% static 'css/app.css' %}" >
+  {% block css %} {% endblock %}
+</head>
+
+<body>
+{% block body %}
+  <header>
+    {% block header %} {% endblock header %}
+  </header>
+
+  <div role="main">
+    {% block content %} this is the content {% endblock %}
+  </div>
+
+  <footer>
+    {% block footer %}{% endblock footer %}
+  </footer>
+{% endblock %}
+</body>
+</html>

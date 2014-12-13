@@ -20,6 +20,10 @@ DATABASES = {
 }                                                                               
 ###### END DATABASE CONFIGURATION
 
+###### MEDIA CONFIGURATION
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
+
 ###### CACHE CONFIGURATION
 CACHE_ENGINES = {
     'redis': {

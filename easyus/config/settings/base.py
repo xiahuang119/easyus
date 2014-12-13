@@ -45,6 +45,8 @@ ALLOWED_HOSTS = []
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
 TEMPLATE_DEBUG = True
 ###### END DEBUG CONFIGURATION
 
@@ -60,7 +62,9 @@ DEFAULT_APPS = (
 
 THIRD_PARTY_APPS = ()
 
-PROJECT_APPS = ()
+PROJECT_APPS = (
+    'apps.house',
+)
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
