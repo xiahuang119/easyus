@@ -1,17 +1,9 @@
-#current django framework
 Django==1.7
-
-#deployment tool
 Fabric==1.10.0
-
-#python image library
 Pillow==2.6.1
-
-#python postgres orm
+djangorestframework==3.0.1
 ecdsa==0.11
 paramiko==1.15.1
 psycopg2==2.5.4
 pycrypto==2.6.1
-
-#django wsgi framework
 wsgiref==0.1.2

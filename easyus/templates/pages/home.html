@@ -1,3 +1,6 @@
 {% extends "base.html" %}
 {% block title %}easyus-Home{% endblock %}
-{% block content %} block content {% endblock %}
+{% block nav %} {% include "pages/navigation.html" %}{% endblock %}
+{% block header %}{% include "pages/header.html" %} {% endblock %}
+{% block content %}{% include "pages/content.html" %} {% endblock %}
+{% block footer %}{% include "pages/footer.html" %} {% endblock %}
